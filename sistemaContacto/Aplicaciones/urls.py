@@ -10,7 +10,7 @@ urlpatterns = [
     path("autent_qr/", views.autent_qr, name="autent_qr"),
     path("Inscripciones/", views.Inscripciones, name="Inscripciones"),
     path("event_creado/", views.event_creado, name="event_creado"),
-    path("elements/", views.elements, name="elements"),
+   
     path("charts/", views.charts, name="charts"),
     path("signup/", views.signup, name="signup"),
     path("signin/", views.signin, name="signin"),

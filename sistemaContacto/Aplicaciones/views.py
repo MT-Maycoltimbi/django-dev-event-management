@@ -14,10 +14,6 @@ def index(request):
     return render(request, 'dashboard/index.html')
 
 
-def elements(request):
-    return render(request, 'dashboard/elements.html')
-
-
 def Inscripciones(request):
     return render(request, 'dashboard/form_basic.html')
 
@@ -33,8 +29,14 @@ def autent_qr(request):
 def event_creado(request):
     return render(request, "dashboard/event_creado.html")
 
+
 def charts(request):
     return render(request, "dashboard/charts.html")
+
+
+
+#### views de Inicio de sesion ####
+
 # REGISTRO
 def signup(request):
     if request.method == 'GET':
@@ -62,7 +64,6 @@ def signout(request):
     return redirect('signin')
 
 # login
-
 
 def signin(request):
     if request.method == 'GET':

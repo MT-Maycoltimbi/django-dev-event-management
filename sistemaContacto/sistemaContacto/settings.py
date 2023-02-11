@@ -76,13 +76,8 @@ WSGI_APPLICATION = 'sistemaContacto.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': os.environ.get("DB_ENGINE", "django.db.backends.postgresql"),
-        'NAME': os.environ.get("DB_DATABASE", "db-central-db-local"),
-        'USER': os.environ.get("DB_USER", "local_db_proyect"),
-        'PASSWORD': os.environ.get("DB_PASSWORD", "local_db_23"),
-        'HOST': os.environ.get("DB_HOST", "localhost"),
-        'PORT': os.environ.get("DB_PORT", "5432"),
-        'ATOMIC_REQUESTS': True
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
